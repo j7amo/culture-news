@@ -1,0 +1,170 @@
+.page {
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: Serif, serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-header {
+  padding: 20px;
+}
+
+.hot-news {
+  padding: 20px;
+}
+
+.hot-news__inner {
+  display: grid;
+  grid-template-rows: 40px 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.hot-news__inner img {
+  grid-row: 1 / 4;
+  grid-column: 1;
+}
+
+.hot-news__header {
+  grid-row: 1;
+  grid-column: 1;
+  color: white;
+  z-index: 2;
+  font-family: Serif, serif;
+  font-size: 100px;
+}
+
+.hot-news__preview {
+  grid-row: 3;
+  grid-column: 1;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.reviews {
+  padding: 20px;
+}
+
+.reviews__article {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.reviews__header {
+  order: 2;
+}
+
+.reviews img {
+  max-height: 270px;
+  max-width: 400px;
+}
+
+.reviews__preview {
+  order: 3;
+  padding: 10px 40px;
+}
+
+.promo {
+  padding: 20px 20px 50px;
+}
+
+.promo__all {
+  display: inline-block;
+  padding: 10px;
+  background-color: darkorange;
+  color: white;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.site-navigation__item {
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.main-footer {
+  padding: 20px;
+  background-color: dimgrey;
+}
+
+.main-footer__navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__link {
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
+}
+
+.main-footer__socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__socials-item {
+  padding: 10px;
+  margin: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
